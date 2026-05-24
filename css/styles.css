@@ -25,11 +25,21 @@
 .navbar{
     div{
         .logo-container{
+            align-items: center;
             .logo-box{
                 background-color: var(--dark-orange) !important;
+                padding: 15px !important;
+                height: fit-content;
+                svg{
+                    width: 18px;
+                }
             }
             .text-box{
+                h3{
+                    font-size: 25px;
+                }
                 p{
+                    font-size: 15px;
                     color: var(--light-gray);
                 }
             }
@@ -52,6 +62,89 @@
                     width: 15px;
                 }
             }
+        }
+    }
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    .meal-container{
+        width: 70%;
+        height: 80vh; /* will change */
+        margin: 35px;
+        border-radius: 25px;
+        .img-box{
+            width: 35%;
+            border-radius: 25px 0 0 25px;
+            background-image: url(/images/photo-1574894709920-11b28e7367e3.avif);
+            background-size: cover;
+            background-position: center;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .ratings-box{
+                background-color: aliceblue;
+                padding: 10px 25px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 25px;
+                gap: 10px;
+                width: fit-content;
+                svg{
+                    width: 20px;
+                }
+                p{
+                    font-weight: bolder;
+                    margin: 0;
+                    span{
+                        font-weight: lighter;
+                    }
+                }
+            }
+            .details-box{
+                background-color: aliceblue;
+                display: flex;
+                justify-content: space-between;
+                border-radius: 25px;
+                padding: 25px;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    p{
+                        margin: 0;
+                        font-size: 15px;
+                        color: var(--light-gray);
+                    }
+                    p:last-child{
+                        font-weight: bolder;
+                        color: black;
+                    }
+                }
+                div:first-child{
+                    svg{
+                        color: var(--dark-orange);
+                    }
+                }
+                div:nth-child(2){
+                    svg{
+                        color: var(--dark-red);
+                    }
+                }
+                div:last-child{
+                    svg{
+                        color: var(--dark-blue);
+                    }
+                }
+            }
+        }
+        .text-box{
+            width: 65%;
+            border-radius: 0 25px 25px 0;
         }
     }
 }
