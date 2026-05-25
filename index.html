@@ -34,8 +34,8 @@
       </div>
     </nav>
     <section>
-      <div class="meal-container bg-danger d-flex justify-content-between">
-        <div class="img-box bg-info">
+      <div class="meal-container shadow d-flex justify-content-between">
+        <div class="img-box">
           <div class="ratings-box"><svg class="text-warning svg-inline--fa fa-star" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"></path></svg><p>5 <span>(500 reviews)</span></p></div>
           <div class="details-box">
             <div>
@@ -55,7 +55,7 @@
             </div>
           </div>
         </div>
-        <div class="text-box bg-success">
+        <div class="text-box d-flex flex-column gap-2">
           <div class="meal-type">
             <div>lorem</div>
             <div>lorem</div>
@@ -68,6 +68,47 @@
             <div class="logos-box">
               <div><svg class="svg-inline--fa fa-bookmark" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bookmark" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"></path></svg></div>
               <div><svg class="svg-inline--fa fa-share-nodes" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="share-nodes" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"></path></svg></div>
+            </div>
+          </div>
+          <div class="warning-box">
+            <div class="logo-box">
+              <svg class="svg-inline--fa fa-triangle-exclamation" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+            </div>
+            <div class="text-box">
+              <p>Extended Preparation Time</p>
+              <p>This recipe requires more than 45 minutes to prepare. Plan accordingly!</p>
+            </div>
+          </div>
+          <div class="four-main-details-box mt-4">
+            <ul class="nav nav-tabs" id="recipeTab" role="tablist">
+              <li class="nav-item" role="presentation"><button class="nav-link active" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients-page" type="button" role="tab" aria-controls="ingredients-page" aria-selected="true"><svg class="svg-inline--fa fa-list-check" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg> Ingredients</button></li>
+              <li class="nav-item" role="presentation"><button class="nav-link" id="instructions-tab" data-bs-toggle="tab" data-bs-target="#instructions-page" type="button" role="tab" aria-controls="instructions-page" aria-selected="false"><svg class="svg-inline--fa fa-book-open" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="book-open" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path></svg>Instructions</button></li>
+              <li class="nav-item" role="presentation"><button class="nav-link" id="Nutrition-tab" data-bs-toggle="tab" data-bs-target="#Nutrition-page" type="button" role="tab" aria-controls="instructions-page" aria-selected="false"><svg class="svg-inline--fa fa-chart-pie" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chart-pie" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M304 240V16.6c0-9 7-16.6 16-16.6C443.7 0 544 100.3 544 224c0 9-7.6 16-16.6 16H304zM32 272C32 150.7 122.1 50.3 239 34.3c9.2-1.3 17 6.1 17 15.4V288L412.5 444.5c6.7 6.7 6.2 17.7-1.5 23.1C371.8 495.6 323.8 512 272 512C139.5 512 32 404.6 32 272zm526.4 16c9.3 0 16.6 7.8 15.4 17c-7.7 55.9-34.6 105.6-73.9 142.3c-6 5.6-15.4 5.2-21.2-.7L320 288H558.4z"></path></svg> Nutrition</button></li>
+              <li class="nav-item" role="presentation"><button class="nav-link" id="ChefsTips-tab" data-bs-toggle="tab" data-bs-target="#ChefsTips-page" type="button" role="tab" aria-controls="instructions-page" aria-selected="false"><svg class="svg-inline--fa fa-lightbulb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="lightbulb" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"></path></svg> Chef's Tips</button></li>
+            </ul>
+
+            <div class="tab-content mt-3" id="recipeTabContent">
+
+              <div class="tab-pane fade show active" id="ingredients-page" role="tabpanel" aria-labelledby="ingredients-tab">
+                <h3>Ingredients List</h3>
+                <p>Your onions, butter, and beef broth content goes here...</p>
+              </div>
+
+              <div class="tab-pane fade" id="instructions-page" role="tabpanel" aria-labelledby="instructions-tab">
+                <h3>Cooking Instructions</h3>
+                <p>Your step-by-step instructions go here...</p>
+              </div>
+
+              <div class="tab-pane fade" id="Nutrition-page" role="tabpanel" aria-labelledby="instructions-tab">
+                <h3>Nutrition-page Instructions</h3>
+                <p>Your step-by-step instructions go here...</p>
+              </div>
+
+              <div class="tab-pane fade" id="ChefsTips-page" role="tabpanel" aria-labelledby="instructions-tab">
+                <h3>ChefsTips-page Instructions</h3>
+                <p>Your step-by-step instructions go here...</p>
+              </div>
+
             </div>
           </div>
         </div>
