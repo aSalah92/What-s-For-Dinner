@@ -98,7 +98,6 @@ section{
         .img-box{
             width: 40%;
             border-radius: 25px 0 0 25px;
-            background-image: url(/images/photo-1574894709920-11b28e7367e3.avif);
             background-size: cover;
             background-position: center;
             padding: 25px;
@@ -200,7 +199,7 @@ section{
                     padding: 0;
                     h1{
                         font-weight: 700;
-                        font-size: 45px;
+                        font-size: 35px;
                     }
                     p{
                         font-size: 18px;
