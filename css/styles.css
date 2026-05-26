@@ -20,6 +20,11 @@
     --light-red:rgb(254, 242, 242);
     --dark-gray: rgb(35, 43, 54);
     --light-gray: rgb(72, 83, 100);
+    --dark-yellow:rgb(208, 135, 0);
+    --light-yellow:rgb(254, 249, 194);
+    --dark-pink:rgb(230, 0, 118);
+    --light-pink:rgb(252, 231, 243);
+
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -83,12 +88,13 @@ section{
     justify-content: center;
     .meal-container{
         width: 70%;
-        min-width: 1000px;
+        min-width: 1200px;
         height: fit-content;
         max-height: 100vh;
         margin: 35px;
         border-radius: 25px;
         background-color: white;
+        overflow: scroll !important;
         .img-box{
             width: 40%;
             border-radius: 25px 0 0 25px;
@@ -219,155 +225,245 @@ section{
                     }
                 }
             }
-        }
-        .warning-box{
-            background-color: var(--light-red);
-            display: flex;
-            align-items: center;
-            height: fit-content !important;
-            padding: 20px 25px;
-            border-radius: 15px;
-            gap: 25px;
-            border-left: 5px solid var(--dark-red);
-            .logo-box{
-                svg{
-                    color: var(--dark-red);
-                }
-            }
-            .text-box{
-                height: fit-content !important;
-                width: fit-content !important;
-                padding: 0;
-                p{
-                    margin: 0;
-                }
-                p:first-child{
-                    color: darkred;
-                    font-weight: 500;
-                }
-                p:last-child{
-                    color: red;
-                    font-size: 14px;
-                }
-            }
-        }
-        .four-main-details-box{
-            .nav{
-                padding: 15px;
+            .warning-box{
+                background-color: var(--light-red);
                 display: flex;
-                justify-content: space-between;
-                .nav-item{
-                    .nav-link{
-                        display: flex;
-                        gap: 8px;
-                        border: none;
-                        color: var(--light-gray);
+                align-items: center;
+                height: fit-content !important;
+                padding: 20px 25px;
+                border-radius: 15px;
+                gap: 25px;
+                border-left: 5px solid var(--dark-red);
+                .logo-box{
+                    svg{
+                        color: var(--dark-red);
+                    }
+                }
+                .text-box{
+                    height: fit-content !important;
+                    width: fit-content !important;
+                    padding: 0;
+                    p{
+                        margin: 0;
+                    }
+                    p:first-child{
+                        color: darkred;
                         font-weight: 500;
-                        svg{
-                            width: 18px;
-                        }
-                        &:hover{
-                            color: var(--dark-gray);
-                        }
                     }
-                    .nav-link.active{
-                        color: var(--dark-orange);
-                        border-bottom: 2px solid var(--dark-orange);
-                    }
-                }
-                .nav-item:last-child{
-                    .nav-link{
-                        svg{
-                            width: 14px;
-                        }
+                    p:last-child{
+                        color: red;
+                        font-size: 14px;
                     }
                 }
             }
-            .tab-content{
-                .ingredients-container{
-                    height: fit-content;
-                    max-height: 400px;
-                    overflow: scroll;
-                    width: 100%;
-                    background-color: rgb(255, 250, 235);
-                    border-radius: 25px;
-                    .ingredient-box{
-                        gap: 15px;
-                        margin: 0;
-                        padding: 0;
-                        margin: 10px 0;
-                        .num-box{
-                            padding: 1px 9px;
-                            background-color: var(--dark-orange);
-                            height: fit-content;
-                            width: fit-content;
-                            border-radius: 50%;
-                            p{
-                                margin: 0;
-                                padding: 0;
-                                color: aliceblue;
-                            }
-                        }
-                        p{
-                            margin: 0;
-                            padding: 0;
-                        }
-                    }
-                }
-                .instructions-container{
-                    height: fit-content;
-                    max-height: 400px;
-                    overflow: scroll;
-                    width: 100%;
-                    .instructions-box{
-                        gap: 15px;
-                        margin: 0;
-                        padding: 0;
-                        margin: 30px 0;
-                        align-items: center;
-                        .num-box{
-                            padding: 6px 16px;
-                            background-color: var(--dark-orange);
-                            height: fit-content;
-                            width: fit-content;
-                            border-radius: 15px;
-                            p{
-                                margin: 0;
-                                padding: 0;
-                                color: aliceblue;
-                                font-size: 20px;
-                                font-weight: 700;
-                            }
-                        }
-                        p{
-                            margin: 0;
-                            padding: 0;
-                            font-size: 18px;
+            .four-main-details-box{
+                .nav{
+                    padding: 15px;
+                    display: flex;
+                    justify-content: space-between;
+                    .nav-item{
+                        .nav-link{
+                            display: flex;
+                            gap: 8px;
+                            border: none;
                             color: var(--light-gray);
+                            font-weight: 500;
+                            svg{
+                                width: 18px;
+                            }
+                            &:hover{
+                                color: var(--dark-gray);
+                            }
+                        }
+                        .nav-link.active{
+                            color: var(--dark-orange);
+                            border-bottom: 2px solid var(--dark-orange);
+                        }
+                    }
+                    .nav-item:last-child{
+                        .nav-link{
+                            svg{
+                                width: 14px;
+                            }
+                        }
+                    }
+                }
+                .tab-content{
+                    .ingredients-container{
+                        height: fit-content;
+                        max-height: 400px;
+                        overflow: scroll;
+                        width: 100%;
+                        background-color: rgb(255, 250, 235);
+                        border-radius: 25px;
+                        .ingredient-box{
+                            gap: 15px;
+                            margin: 0;
+                            padding: 0;
+                            margin: 10px 0;
+                            .num-box{
+                                padding: 1px 9px;
+                                background-color: var(--dark-orange);
+                                height: fit-content;
+                                width: fit-content;
+                                border-radius: 50%;
+                                p{
+                                    margin: 0;
+                                    padding: 0;
+                                    color: aliceblue;
+                                }
+                            }
+                            p{
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .instructions-container{
+                        height: fit-content;
+                        max-height: 400px;
+                        overflow: scroll;
+                        width: 100%;
+                        .instructions-box{
+                            gap: 15px;
+                            margin: 0;
+                            padding: 0;
+                            margin: 30px 0;
+                            align-items: center;
+                            .num-box{
+                                padding: 6px 16px;
+                                background-color: var(--dark-orange);
+                                height: fit-content;
+                                width: fit-content;
+                                border-radius: 15px;
+                                p{
+                                    margin: 0;
+                                    padding: 0;
+                                    color: aliceblue;
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                }
+                            }
+                            p{
+                                margin: 0;
+                                padding: 0;
+                                font-size: 18px;
+                                color: var(--light-gray);
+                            }
+                        }
+                    }
+                    .nutrition-container{
+                        .nutrition-inner{
+                            .nutrition-box{
+                                .logo-name{
+                                    gap: 10px;
+                                    .logo-box{
+                                        background-color: var(--light-gray);
+                                        color: aliceblue;
+                                        padding: 8px 12px;
+                                        border-radius: 10px;
+                                        svg{
+                                            width: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                            .nutrition-box:first-child{
+                                .logo-name{
+                                    .logo-box{
+                                        background-color: var(--light-orange);
+                                        color: var(--dark-orange);
+                                    }
+                                }
+                            }
+                            .nutrition-box:nth-child(2){
+                                .logo-name{
+                                    .logo-box{
+                                        background-color: var(--light-blue);
+                                        color: var(--dark-blue);
+                                    }
+                                }
+                            }
+                            .nutrition-box:nth-child(3){
+                                .logo-name{
+                                    .logo-box{
+                                        background-color: var(--light-yellow);
+                                        color: var(--dark-yellow);
+                                    }
+                                }
+                            }
+                            .nutrition-box:nth-child(4){
+                                .logo-name{
+                                    .logo-box{
+                                        background-color: var(--light-red);
+                                        color: var(--dark-red);
+                                    }
+                                }
+                            }
+                            .nutrition-box:nth-child(5){
+                                .logo-name{
+                                    .logo-box{
+                                        background-color: var(--light-green);
+                                        color: var(--dark-green);
+                                    }
+                                }
+                            }
+                            .nutrition-box:nth-child(6){
+                                .logo-name{
+                                    .logo-box{
+                                        background-color: var(--light-pink);
+                                        color: var(--dark-pink);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .chef-container{
+                        .chef-inner{
+                            max-height: 400px;
+                            overflow: scroll;
+                            .chef-box{
+                                background-color: rgb(255, 251, 235);
+                                border-radius: 15px;
+                                border-left: 6px solid rgb(225, 113, 0);
+                                padding: 25px 10px;
+                                p:first-child{
+                                    background-color: rgb(225, 113, 0);
+                                    color: aliceblue;
+                                    padding: 2px 7px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 50%;
+                                }
+                                p:last-child{
+                                    text-wrap: wrap;
+                                }
+                            }
                         }
                     }
                 }
             }
-        }
-        .random-btn{
-            background: linear-gradient(to right, rgb(255, 102, 0), var(--dark-red));
-            color: aliceblue;
-            width: fit-content;
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            outline: none;
-            border: none;
-            padding: 15px 25px;
-            font-weight: 500;
-            border-radius: 15px;
-            transition: 0.25s;
-            &:hover{
-                cursor: pointer;
-                transform: scale(1.1);
-            }
-            svg{
-                width: 15px;
+            .random-btn{
+                background: linear-gradient(to right, rgb(255, 102, 0), var(--dark-red));
+                color: aliceblue;
+                width: fit-content;
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                outline: none;
+                border: none;
+                padding: 15px 25px;
+                font-weight: 500;
+                border-radius: 15px;
+                transition: 0.25s;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+                svg{
+                    width: 15px;
+                }
             }
         }
     }
