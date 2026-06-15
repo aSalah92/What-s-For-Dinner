@@ -88,7 +88,7 @@ let mealsArr = [
       "Adjust spice level by varying the tikka paste amount",
       "Serve with naan bread and basmati rice",
     ],
-    img: "/images/ChickenTikkaMasala.avif",
+    img: "./images/ChickenTikkaMasala.avif",
   },
   {
     mealName: "French Onion Soup",
@@ -133,7 +133,7 @@ let mealsArr = [
       "Gruyère can be substituted with Swiss cheese",
       "Watch carefully when broiling to avoid burning",
     ],
-    img: "/images/FrenchOnionSoup.avif",
+    img: "./images/FrenchOnionSoup.avif",
   },
   {
     mealName: "Margherita Pizza",
@@ -178,7 +178,7 @@ let mealsArr = [
       "Add basil after baking to keep it fresh",
       "Let dough rest properly for best texture",
     ],
-    img: "/images/MargheritaPizza.avif",
+    img: "./images/MargheritaPizza.avif",
   },
   {
     mealName: "Chocolate Brownies",
@@ -223,7 +223,7 @@ let mealsArr = [
       "Let the brownies cool completely before slicing for clean, sharp edges",
       "Add a handful of chocolate chips or walnuts for extra texture and flavor",
     ],
-    img: "/images/ChocolateBrownies.jpg",
+    img: "./images/ChocolateBrownies.jpg",
   },
   {
     mealName: "Creamy Tuscan Chicken",
@@ -268,7 +268,7 @@ let mealsArr = [
       "Serve this dish over a bed of fettuccine pasta or with crusty bread",
       "You can substitute chicken breasts with chicken thighs for an even juicier texture",
     ],
-    img: "/images/CreamyTuscanChicken.jpg",
+    img: "./images/CreamyTuscanChicken.jpg",
   },
   {
     mealName: "Greek Salmon Bowls",
@@ -313,7 +313,7 @@ let mealsArr = [
       "Add a scoop of tzatziki sauce on top for extra creaminess and flavor",
       "Meal prep friendly—store the components separately and assemble right before eating",
     ],
-    img: "/images/GreekSalmonBowls.jpg",
+    img: "./images/GreekSalmonBowls.jpg",
   },
   {
     mealName: "Creamy Tomato Basil Soup",
@@ -358,7 +358,7 @@ let mealsArr = [
       "An immersion blender saves dishes, but a traditional stand blender works too (just don't overfill it while hot)",
       "Drizzle a tiny bit of extra virgin olive oil over the bowls right before serving for a gourmet finish",
     ],
-    img: "/images/CreamyTomatoBasilSoup.jpg",
+    img: "./images/CreamyTomatoBasilSoup.jpg",
   },
   {
     mealName: "Beef Wellington",
@@ -403,7 +403,7 @@ let mealsArr = [
       "Use a thermometer to check the meat—remove from the oven when the center reads 52°C (125°F) for a perfect rest",
       "Let the Wellington rest for at least 10-15 minutes after baking so the internal juices lock into the meat",
     ],
-    img: "/images/BeefWellington.jpg",
+    img: "./images/BeefWellington.jpg",
   },
   {
     mealName: "Koshari",
@@ -451,7 +451,7 @@ let mealsArr = [
       "Serve with extra chili flakes mixed into a portion of the tomato sauce for those who love high heat",
       "This dish is naturally vegan, packed with plant-based protein, and incredibly filling",
     ],
-    img: "/images/EgyptianKoshari.jpg",
+    img: "./images/EgyptianKoshari.jpg",
   },
   {
     mealName: "Mahshi",
@@ -499,7 +499,7 @@ let mealsArr = [
       "Placing a heavy, heat-safe plate face down on top of the rolls inside the pot prevents them from unrolling while boiling",
       "Squeeze a little bit of fresh lemon juice over the top layers right before serving to add a bright, tangy finish",
     ],
-    img: "/images/EgyptianMahshi.jpg",
+    img: "./images/EgyptianMahshi.jpg",
   },
   {
     mealName: "Ta'ameya",
@@ -547,7 +547,7 @@ let mealsArr = [
       "Make sure the fava beans are completely dried after soaking, as excess water will cause the patties to fall apart in the hot oil",
       "Serve hot inside warm Egyptian baladi bread with tahini sauce, tomatoes, and pickled turnips",
     ],
-    img: "/images/EgyptianTaameya.jpg",
+    img: "./images/EgyptianTaameya.jpg",
   },
   {
     mealName: "Hawawshi",
@@ -593,7 +593,7 @@ let mealsArr = [
       "Serve hot alongside a side of tahini sauce, pickled cucumbers, or fresh arugula",
       "Make sure to squeeze the excess juice out of the grated onions before mixing them with the meat to keep the bread from getting soggy",
     ],
-    img: "/images/Hawawshi.jpg",
+    img: "./images/Hawawshi.jpg",
   },
   {
     mealName: "Roz Ma'ammar",
@@ -638,7 +638,7 @@ let mealsArr = [
       "Let the dish rest covered outside the oven for 10 minutes before scooping into it so the rice sets beautifully",
       "You can make a sweet version of this exact dish by omitting the meat and swapping the savory spices for sugar and vanilla",
     ],
-    img: "/images/RozMaammar.jpg",
+    img: "./images/RozMaammar.jpg",
   },
   {
     mealName: "Mesa'aa",
@@ -684,7 +684,7 @@ let mealsArr = [
       "This dish tastes even better the next day after the eggplant has thoroughly absorbed the garlic tomato sauce",
       "Can easily be made vegetarian or vegan by omitting the minced beef layer completely",
     ],
-    img: "/images/Mesaaa.jpg",
+    img: "./images/Mesaaa.jpg",
   },
   {
     mealName: "Molokhia",
@@ -728,7 +728,7 @@ let mealsArr = [
       "The traditional way to enjoy this is served piping hot over a bed of white rice, alongside roasted chicken and pickled tomatoes",
       "Be careful not to burn the coriander and garlic during the tasha stage, as burnt garlic will make the entire soup taste bitter",
     ],
-    img: "/images/Molokhia.jpg",
+    img: "./images/Molokhia.jpg",
   },
   {
     mealName: "Fattah",
@@ -774,7 +774,7 @@ let mealsArr = [
       "You can customize the amount of garlic sauce poured over the bread layers depending on how strong you want the garlic flavor to be",
       "This dish is traditionally served during major celebratory occasions and family gatherings across Egypt",
     ],
-    img: "/images/Fattah.jpg",
+    img: "./images/Fattah.jpg",
   },
   {
     mealName: "Macarona Bachamel",
@@ -820,7 +820,7 @@ let mealsArr = [
       "Using a mix of mozzarella and local Roomi cheese adds an incredible savory depth and perfect melt to the top crust",
       "This dish is an adaptation of classic Greek Pastitsio or French baking techniques that became an essential center-piece for family gatherings across Egypt",
     ],
-    img: "/images/MacaronaBachamel.jpg",
+    img: "./images/MacaronaBachamel.jpg",
   },
   {
     mealName: "Baba Ganoush",
@@ -865,7 +865,7 @@ let mealsArr = [
       "Serve at room temperature alongside hot baladi bread, fried eggplant, or crispy ta'ameya",
       "Originating in the Levant, this dip has evolved into a permanent fixture of traditional Egyptian standard side dishes",
     ],
-    img: "/images/BabaGanoush.jpg",
+    img: "./images/BabaGanoush.jpg",
   },
   {
     mealName: "Shawarma",
@@ -912,7 +912,7 @@ let mealsArr = [
       "Letting the meat marinate overnight completely transforms the texture and allows the warm spices to penetrate deeply",
       "While historically tracking back to Ottoman roots and refined heavily by Syrian culinary traditions, shawarma wraps stand as an incredibly popular fast-food staple on nearly every street corner in Cairo",
     ],
-    img: "/images/Shawarma.jpg",
+    img: "./images/Shawarma.jpg",
   },
   {
     mealName: "Kofta",
@@ -957,7 +957,7 @@ let mealsArr = [
       "Kneading the meat until strings form binds the proteins together, ensuring it grips the skewer securely throughout the cook",
       "A massive centerpiece of the Egyptian 'Mashwiyat' (grill house) dining culture, built on deep-rooted pan-Middle Eastern traditions",
     ],
-    img: "/images/Kofta.jpg",
+    img: "./images/Kofta.jpg",
   },
   {
     mealName: "Warak Enab",
@@ -1005,7 +1005,7 @@ let mealsArr = [
       "Never skip placing a weighted plate over the rolls during cooking; it blocks them from unrolling and unraveling as the liquid boils",
       "While popular across Greece and the Levant (often cold or containing meat), the herb-heavy tomato version is a universal favorite across Egypt",
     ],
-    img: "/images/WarakEnab.jpg",
+    img: "./images/WarakEnab.jpg",
   },
   {
     mealName: "Shish Tawook",
@@ -1051,7 +1051,7 @@ let mealsArr = [
       "Let the grilled skewers rest for 5 minutes under a sheet of foil before serving to lock all the internal juices back into the muscle fibers",
       "An incredibly common restaurant and street order across Egypt, adopted seamlessly from classic Lebanese and Turkish grilling methods",
     ],
-    img: "/images/ShishTawook.jpg",
+    img: "./images/ShishTawook.jpg",
   },
   {
     mealName: "Sambousek",
@@ -1096,7 +1096,7 @@ let mealsArr = [
       "Make sure the seal is flawless; any exposed cheese filling will immediately leak and splatter aggressively in hot oil",
       "While tracking back to ancient Central Asian samosa roots, these crisp parcels are a definitive fixture on Egyptian Ramadan banquet tables",
     ],
-    img: "/images/Sambousek.jpg",
+    img: "./images/Sambousek.jpg",
   },
   {
     mealName: "Chicken Pane",
@@ -1142,7 +1142,7 @@ let mealsArr = [
       "Don't crowd the skillet while frying; dropping too many pieces at once lowers the oil temperature and leads to soggy pane",
       "Typically served alongside Macarona Bachamel or french fries for a classic comfort meal",
     ],
-    img: "/images/ChickenPane.jpg",
+    img: "./images/ChickenPane.jpg",
   },
 ];
 
